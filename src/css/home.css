@@ -1,0 +1,111 @@
+.divCreate {
+    margin: auto;
+    margin-top: 200px;
+    border: 1.5px solid #04AA6D;
+    padding: 1%;
+    border-style: dotted;
+    position: relative;
+    float: left;
+    margin-left: 2%;
+    height: 16em;
+    width: 44%;
+}
+
+.divJoin {
+    margin: auto;
+    border: 1.5px solid #3377FF;
+    padding: 1%;
+    border-style: dotted;
+    margin-top: 200px;
+    position: relative;
+    float: left;
+    margin-left: 4%;
+    height: 16em;
+    width: 44%;
+}
+
+.inputHome {
+    background-color: whitesmoke !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+    border: 1px solid #ccc !important;
+    box-sizing: border-box !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 20px;
+}
+
+.btnNumber {
+    width: 40% !important;
+    padding: 12px 20px !important;
+    margin: 8px 24px !important;
+    display: inline-block !important;
+    border: 1px solid #04AA6D !important;
+    box-sizing: border-box !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.btnCreate {
+    background-color: #FF0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.btnCreate:hover {
+    opacity: 0.8;
+}
+
+.btnDelete {
+    color: red;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+}
+
+.btnDelete:hover {
+    opacity: 0.8;
+}
+
+.btnJoin {
+    background-color: #64D0FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.btnJoin:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-device-width : 900px) {
+    .divCreate {
+        padding: 1%;
+        margin-top: 150px;
+        margin-left: 3%;
+        height: auto;
+        width: 90%;
+    }
+
+    .divJoin {
+        padding: 1%;
+        margin-top: 50px;
+        margin-left: 3%;
+        height: auto;
+        width: 90%;
+    }
+}

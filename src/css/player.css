@@ -1,0 +1,102 @@
+#players {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+}
+
+#players td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#players tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#players tr:hover {
+    background-color: #ddd;
+}
+
+#players th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3377FF;
+    color: white;
+}
+
+.highlight {
+    color: white !important;
+    font-weight: bold;
+    background-image: linear-gradient( to bottom right, transparent 50%, #b393d3 50% ), linear-gradient(#b393d3, #b393d3), linear-gradient(to top left, transparent 50%, #b393d3 50%);
+    background-repeat: no-repeat;
+    background-size: 10px 40px, calc(100% - 20px) 40px, 10px 40px;
+    background-position: left center, center, right;
+}
+
+td[id^=vote-] {
+    font-size: 20px;
+    color: green;
+}
+
+hr {
+    width: 80%;
+    border: 2px solid lightgray;
+}
+
+.results {
+    width: 20%;
+    position: relative;
+    float: left;
+    margin: 30px 0 10px 46px;
+    font-size: 32px;
+    color: #04AA6D;
+}
+
+.actions {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin: 10px 0 0 10%;
+}
+
+.btnShowVotes {
+    position: relative;
+    float: right;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btnShowVotes:hover {
+        background-color: #82D4B6;
+    }
+
+.btnResetMatch {
+    position: relative;
+    float: right;
+    background-color: #FF337D;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+    .btnResetMatch:hover {
+        background-color: #FF99BE;
+    }
