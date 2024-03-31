@@ -5,7 +5,7 @@ import GamePlaning from '@/components/GamePlaning.vue'
 
 const routes = [
     {
-        path: "/",
+        path: "/planing-poker-app",
         name: "Home",
         component: HomePlaning,
     },
