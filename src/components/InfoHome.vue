@@ -31,14 +31,14 @@
         methods: {
             fetchTotalUsers() {
                 this.loading = true;
-                axios.get('users/GetTotalNumberUsers')
+                axios.get('https://planing-poker-api.fly.dev/users/GetTotalNumberUsers')
                     .then(response => {
                         this.totalUsers = response.data;
                         this.fetchTotalGame();
                     }).catch(error => console.log(error))
             },
             fetchTotalGame() {
-                axios.get('game/GetNumberMatchs')
+                axios.get('https://planing-poker-api.fly.dev/game/GetNumberMatchs')
                     .then(response => {
                         this.totalMatchs = response.data;
                         setTimeout(() => {

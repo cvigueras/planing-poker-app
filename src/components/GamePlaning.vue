@@ -88,7 +88,7 @@
                 }, 1000);
             },
             fetchGame(gameId) {
-                axios.get('game/' + gameId)
+                axios.get('https://planing-poker-api.fly.dev/Game/' + gameId)
                     .then(response => {
                         this.$store.state.users = response.data.users;
                         this.buildGame(response.data);

@@ -54,7 +54,7 @@
             },
             fetchData(game) {
                 let user = this.buildUser(this.username, this.gameId);
-                axios.post('game', game)
+                axios.post('https://planing-poker-api.fly.dev/game', game)
                     .then(response => {
                         this.persistLocalData(response.data, user);
                         this.loading = false;
@@ -63,7 +63,7 @@
             joinGame() {
                 this.loading = true;
                 let user = this.buildUser(this.name, this.gameId);
-                axios.put('game/' + this.gameId, user)
+                axios.put('https://planing-poker-api.fly.dev/game/' + this.gameId, user)
                     .then(response => {
                         this.persistLocalData(response.data, user);
                         this.loading = false;
