@@ -10,7 +10,7 @@ const routes = [
         component: HomePlaning,
     },
     {
-        path: "/planing-poker-app/planing",
+        path: "/planing",
         name: "GamePlaning",
         component: GamePlaning,
     },

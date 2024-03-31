@@ -4,8 +4,9 @@
     "\\public",
     "\\src",
     "\\src\\components",
+    "\\src\\factories",
     "\\src\\router"
   ],
-  "SelectedNode": "\\babel.config.js",
+  "SelectedNode": "\\src\\router\\index.js",
   "PreviewInSolutionExplorer": false
 }

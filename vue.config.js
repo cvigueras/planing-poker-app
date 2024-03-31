@@ -26,16 +26,20 @@ module.exports = {
         //},
         proxy: {
             '^/cards': {
-                target: process.env.VUE_APP_ENVIROMENT
+                target: process.env.VUE_APP_ENVIROMENT,
+                changeOrigin: true,
             },
             '^/game': {
-                target: process.env.VUE_APP_ENVIROMENT
+                target: process.env.VUE_APP_ENVIROMENT,
+                changeOrigin: true,
             },
             '^/votes': {
-                target: process.env.VUE_APP_ENVIROMENT
+                target: process.env.VUE_APP_ENVIROMENT,
+                changeOrigin: true,
             },
             '^/users': {
-                target: process.env.VUE_APP_ENVIROMENT
+                target: process.env.VUE_APP_ENVIROMENT,
+                changeOrigin: true,
             }
         },
         port: process.env.VUE_APP_REDIRECT_PORT
