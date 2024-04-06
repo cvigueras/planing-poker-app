@@ -1,6 +1,5 @@
 ﻿<template>
     <ShowMessageModal modaltype="disconnected" v-show="showMessageModal" />
-    <div class="results">Results</div>
     <hr />
     <div class="actions">
         <button class="btnShowVotes" @click="showAllVotes()">Show votes</button>

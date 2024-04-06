@@ -8,7 +8,6 @@
     <div class="divCreate">
         <input v-model="username" type="text" placeholder="user name" name="username" class="inputHome" required>
         <input v-model="gamename" type="text" placeholder="game name" name="gamename" class="inputHome" required>
-        <input v-model="description" type="text" placeholder="description" name="description" class="inputHome" required>
         <button class="btnCreate" @click="createGame" type="submit">
             create game
         </button>
@@ -49,12 +48,12 @@
         methods: {
             createGame() {
                 this.loading = true;
-                let gameCreated = gameFactory.create(this.username, this.gamename, this.description);
+                let gameCreated = gameFactory.create(this.username, this.gamename, "New Game");
                 this.fetchData(gameCreated);
             },
             fetchData(game) {
                 let user = this.buildUser(this.username, this.gameId);
-                axios.post('https://planing-poker-api.fly.dev/game', game)
+                axios.post('https://planing-poker-api-lively-forest-7338.fly.dev/game', game)
                     .then(response => {
                         this.persistLocalData(response.data, user);
                         this.loading = false;
@@ -63,7 +62,7 @@
             joinGame() {
                 this.loading = true;
                 let user = this.buildUser(this.name, this.gameId);
-                axios.put('https://planing-poker-api.fly.dev/game/' + this.gameId, user)
+                axios.put('https://planing-poker-api-lively-forest-7338.fly.dev/game/' + this.gameId, user)
                     .then(response => {
                         this.persistLocalData(response.data, user);
                         this.loading = false;

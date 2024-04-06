@@ -42,7 +42,7 @@
         },
         methods: {
             fetchData() {
-                axios.get('https://planing-poker-api.fly.dev/cards')
+                axios.get('https://planing-poker-api-lively-forest-7338.fly.dev/cards')
                     .then(response => {
                         this.firstcards = response.data.slice(0, 7);
                         this.secondcards = response.data.slice(7, 13);
@@ -54,7 +54,7 @@
                     group: sessionStorage.getItem('gameid'),
                     value: vote
                 }
-                axios.post('https://planing-poker-api.fly.dev/votes', votes)
+                axios.post('https://planing-poker-api-lively-forest-7338.fly.dev/votes', votes)
                     .then(function () {
                         window.signalR
                             .invoke('NotifyUserHasVoted', votes.group, votes.name, votes.value)

@@ -6,15 +6,11 @@
     <div v-else class="content">
         <table id="customers">
             <tr>
-                <th>Admin</th>
                 <th>Title</th>
-                <th>Description</th>
                 <th>Share Game Id</th>
             </tr>
             <tr>
-                <td>{{ createdBy }}</td>
                 <td>{{ title }}</td>
-                <td>{{ description }}</td>
                 <td>
                     <input type="text" id="urlShare" name="urlValue" :value="urlValue" class="inputGame">
                     <input type="button" @click="copyUrl" value="Copy id" class="btnGame">
@@ -78,7 +74,7 @@
                 this.id = game.id;
                 this.createdBy = game.createdBy;
                 this.title = game.title;
-                this.description = game.description;
+                this.description = "New Game";
                 this.roundTime = game.roundTime;
                 this.expiration = game.expiration;
                 sessionStorage.setItem('users', JSON.stringify(game.users));
@@ -88,7 +84,7 @@
                 }, 1000);
             },
             fetchGame(gameId) {
-                axios.get('https://planing-poker-api.fly.dev/Game/' + gameId)
+                axios.get('https://planing-poker-api-lively-forest-7338.fly.dev/Game/' + gameId)
                     .then(response => {
                         this.$store.state.users = response.data.users;
                         this.buildGame(response.data);
